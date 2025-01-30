@@ -10,6 +10,20 @@
          type="image/x-icon"
       />
 
+      <!-- Google Fonts CDN -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Font Awesome CDN -->
+      <script
+         src="https://kit.fontawesome.com/3179a557de.js"
+         crossorigin="anonymous"
+      ></script>
+
       <!-- DaisyUI and Tailwind CSS -->
       <link
          href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -17,7 +31,16 @@
          type="text/css"
       />
       <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+      <style type="text/tailwindcss">
+         @theme {
+            --font-adLamDisplay: ADLaM Display, serif;
+            --font-sora: Sora, serif;
+         }
+      </style>
    </head>
 
-   <body></body>
+   <body class="font-sora">
+      
+   </body>
 </html>
