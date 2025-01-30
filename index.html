@@ -29,65 +29,113 @@
    <body class="font-sora">
       <header>
          <!-- NavBar Area -->
-         <div class="bg-[#FFF9F4]">
-            <div class="container flex justify-between items-center">
-               <!-- Logo -->
-               <div class="flex items-center cursor-pointer">
-                  <img
-                     class="w-12 h-12 mr-3"
-                     src="./assets/logo-header.png"
-                     alt="Logo"
-                  />
-                  <h2 class="text-[#111] text-[26px] hidden md:block">
-                     Browse <span class="text-[#FFDC26]">4</span>Pets
-                  </h2>
+         <div class="bg-[#FFF9F4] border-b border-[#111] md:border-none">
+            <div class="navbar w-11/12 mx-auto px-0 md:py-7">
+               <div class="navbar-start">
+                  <div class="dropdown">
+                     <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                     >
+                        <li><a href="#">Find a pet</a></li>
+                        <li><a href="#">Breeds</a></li>
+                        <li><a href="#">Contact US</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="flex items-center cursor-pointer px-0">
+                     <img
+                        class="w-12 lg:w-10 xl:w-12 h-12 lg:h-10 xl:h-12 mr-3"
+                        src="./assets/logo-header.png"
+                        alt="Logo"
+                     />
+                     <h2
+                        class="text-[#111] text-[26px] lg:text-[22px] xl:text-[26px] hidden md:block"
+                     >
+                        Browse <span class="text-[#FFDC26]">4</span>Pets
+                     </h2>
+                  </div>
                </div>
 
-               <!-- Actionable link -->
-               <div>
-                  <ul class="flex space-x-8 text-[#111] text-xl">
+               <div class="navbar-center hidden lg:flex">
+                  <ul
+                     class="flex md:space-x-6 xl:space-x-8 text-lg xl:text-xl text-[#111]"
+                  >
                      <li><a href="#">Find a pet</a></li>
                      <li><a href="#">Breeds</a></li>
                      <li><a href="#">Contact US</a></li>
                   </ul>
                </div>
 
-               <!-- Authorization button -->
-               <div class="flex items-center">
-                  <!-- Bell Icon -->
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="currentColor"
-                     class="size-6"
-                  >
-                     <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                     />
-                  </svg>
+               <div class="navbar-end">
+                  <div class="hidden lg:block">
+                     <div class="flex items-center">
+                        <!-- Bell Icon -->
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke-width="1.5"
+                           stroke="currentColor"
+                           class="size-6"
+                        >
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                           />
+                        </svg>
 
-                  <!-- Search Icon -->
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke-width="1.5"
-                     stroke="currentColor"
-                     class="size-6"
-                  >
-                     <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                     />
-                  </svg>
+                        <!-- Search Icon -->
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           fill="none"
+                           viewBox="0 0 24 24"
+                           stroke-width="1.5"
+                           stroke="currentColor"
+                           class="size-6 mx-4"
+                        >
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                           />
+                        </svg>
 
-                  <div>
-                     <button class="btn btn-outline btn-info">Info</button>
+                        <!-- User button -->
+                        <button
+                           class="text-[#111] text-md xl:text-xl border border-[#FFDC26] rounded-lg px-[20px] xl:px-[30px] py-2 xl:py-[10px]"
+                        >
+                           Login
+                        </button>
+                        <button
+                           class="text-[#111] text-md xl:text-xl border border-[#FFDC26] bg-[#FFDC26] rounded-lg px-[20px] xl:px-[30px] py-2 xl:py-[10px] duration-300 ml-3"
+                        >
+                           Register
+                        </button>
+                     </div>
+                  </div>
+
+                  <!-- Hamburger Menu Icon -->
+                  <div
+                     tabindex="0"
+                     role="button"
+                     class="btn btn-ghost lg:hidden"
+                  >
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-8"
+                     >
+                        <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                     </svg>
                   </div>
                </div>
             </div>
