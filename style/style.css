@@ -14,10 +14,16 @@
    margin-right: auto !important;
 } */
 
+
+/* Everyday Low Price Section */
 .bg-gromming {
    background: linear-gradient(109deg, #F8CCFB 1.27%, #ACD2FD 100%);
 }
 
 .bg-tShirt {
    background: linear-gradient(109deg, #FFF9F4 1.27%, #F9DF8A 100%);
+}
+
+.hidden-gromming-card {
+   display: block;
 }

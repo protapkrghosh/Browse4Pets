@@ -279,40 +279,90 @@
             </h1>
 
             <!-- Dog pricing cards -->
-            <div class="lg:flex justify-between gap-[26px]">
-               <!-- Grooming Card -->
+            <div class="lg:flex justify-between md:gap-[26px]">
+               <!-- Grooming Card for medium to large device -->
                <div
-                  class="w-full lg:w-[65%] xl:w-[60%] h-fit flex justify-between items-center bg-gromming rounded-xl"
+                  class="w-full lg:w-[65%] xl:w-[60%] h-fit md:flex justify-between items-center bg-gromming rounded-xl hidden md:hidden-gromming-card"
                >
-                  <div class="text-[#000] ml-[34px] mt-[38px] md:ml-16 xl:ml-20 lg:mt-0">
+                  <div
+                     class="text-[#000] ml-[34px] mt-[38px] md:ml-16 xl:ml-20 lg:mt-0"
+                  >
                      <h4 class="xl:text-xl">Under Price</h4>
-                     <h3 class="text-[22px] md:text-[30px] lg:text-[22px] xl:text-[30px] font-adLamDisplay mt-2 mb-3">
+                     <h3
+                        class="text-[22px] md:text-[30px] lg:text-[22px] xl:text-[30px] font-adLamDisplay mt-2 mb-3"
+                     >
                         Pet Grooming Mitt
                      </h3>
-                     <p class="text-white xl:text-[23px] font-adLamDisplay mb-4">
+                     <p
+                        class="text-white xl:text-[23px] font-adLamDisplay mb-4"
+                     >
                         (Easy Hair Removed)
                      </p>
-                     <h2 class="text-[40px] md:text-[50px] lg:text-[44px] xl:text-[53px] font-adLamDisplay">$7.99</h2>
-                  </div>
-
-                  <div class="w-2/4">
-                     <img class="w-full" src="./assets/cute-dog-mid.png" alt="Dog Image" />
-                  </div>
-               </div>
-
-               <!-- T-shirt Card -->
-               <div class="w-full lg:w-[35%] xl:w-[40%] bg-tShirt rounded-[12px] lg:relative">
-                  <div class="ml-[34px] md:ml-16 lg:ml-16 xl:ml-[50px] pt-[38px] md:pt-16 lg:pt-0 mt-[38px] xl:mt-10">
-                     <h3 class="text-[22px] md:text-[30px] lg:text-[22px] xl:text-[30px] font-adLamDisplay mb-1">
-                        T-Shirt for Dogs
-                     </h3>
-                     <h2 class="text-[#FFDC26] text-[40px] md:text-[50px] lg:text-[44px] xl:text-[53px] font-adLamDisplay">
+                     <h2
+                        class="text-[40px] md:text-[50px] lg:text-[44px] xl:text-[53px] font-adLamDisplay"
+                     >
                         $7.99
                      </h2>
                   </div>
 
-                  <div class="flex justify-end lg:flex-none -mt-20 md:mt-0 ml-auto lg:ml-0 lg:absolute right-0 bottom-4 w-3/5">
-                     <img src="./assets/cute-pet-mid.png" alt="Pet Image">
+                  <div class="w-2/4">
+                     <img
+                        class="w-full"
+                        src="./assets/cute-dog-mid.png"
+                        alt="Dog Image"
+                     />
+                  </div>
+               </div>
+
+               <!-- Grooming Card for only small device -->
+               <div
+                  class="w-full lg:w-[35%] xl:w-[40%] bg-gromming rounded-[12px] lg:relative -mb-4 block md:hidden"
+               >
+                  <div
+                     class="ml-[34px] md:ml-16 lg:ml-16 xl:ml-[50px] pt-[38px] md:pt-16 lg:pt-0 mt-[38px] xl:mt-10"
+                  >
+                     <h3
+                        class="text-[22px] md:text-[30px] lg:text-[22px] xl:text-[30px] font-adLamDisplay mb-1"
+                     >
+                        Pet Grooming Mitt
+                     </h3>
+                     <h2
+                        class="text-[40px] md:text-[50px] lg:text-[44px] xl:text-[53px] font-adLamDisplay"
+                     >
+                        $7.99
+                     </h2>
+                  </div>
+
+                  <div
+                     class="flex justify-end lg:flex-none -mt-20 md:mt-0 ml-auto lg:ml-0 lg:absolute right-0 bottom-4 w-3/5"
+                  >
+                     <img src="./assets/cute-dog-mid.png" alt="Pet Image" />
+                  </div>
+               </div>
+
+               <!-- T-shirt Card -->
+               <div
+                  class="w-full lg:w-[35%] xl:w-[40%] bg-tShirt rounded-[12px] lg:relative"
+               >
+                  <div
+                     class="ml-[34px] md:ml-16 lg:ml-16 xl:ml-[50px] pt-[38px] md:pt-16 lg:pt-0 mt-[38px] xl:mt-10"
+                  >
+                     <h3
+                        class="text-[22px] md:text-[30px] lg:text-[22px] xl:text-[30px] font-adLamDisplay mb-1"
+                     >
+                        T-Shirt for Dogs
+                     </h3>
+                     <h2
+                        class="text-[#FFDC26] text-[40px] md:text-[50px] lg:text-[44px] xl:text-[53px] font-adLamDisplay"
+                     >
+                        $7.99
+                     </h2>
+                  </div>
+
+                  <div
+                     class="flex justify-end lg:flex-none -mt-20 md:mt-0 ml-auto lg:ml-0 lg:absolute right-0 bottom-4 w-3/5"
+                  >
+                     <img src="./assets/cute-pet-mid.png" alt="Pet Image" />
                   </div>
                </div>
             </div>
