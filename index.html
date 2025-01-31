@@ -285,7 +285,7 @@
          </section>
 
          <!-- Trending Pet Products Section -->
-         <section class="bg-[#FFF9F4] py-[140px]">
+         <section class="md:bg-[#FFF9F4] md:py-[80px] xl:py-[130px]">
             <div class="container mx-auto px-4 md:px-8 lg:px-10 xl:px-0">
                <h1
                   class="text-[#111] text-2xl md:text-4xl font-adLamDisplay mb-8 md:mb-12"
@@ -294,17 +294,19 @@
                </h1>
 
                <!-- All Pet Product Card -->
-               <div class="flex justify-between gap-6">
+               <div class="lg:flex justify-between lg:gap-3 xl:gap-6">
                   <!-- T-shirt dog card -->
-                  <div class="bg-[#F9DF8A] rounded-[10px] w-[30%]">
-                     <div class="w-[424px] h-[402px] relative">
+                  <div
+                     class="bg-[#F9DF8A] rounded-[10px] w-full lg:w-[40%] xl:w-[30%] relative"
+                  >
+                     <div class="md:w-[424px] h-[402px]">
                         <div class="p-8">
                            <h2
                               class="text-[#000] text-[30px] font-adLamDisplay"
                            >
                               T-Shirt For Dogs
                            </h2>
-                           <p class="text-[#111111b3] mt-3 mb-5 w-3/5">
+                           <p class="text-[#111111b3] mt-3 mb-5 md:w-4/5">
                               Discover a world of treats, toys, and essentials
                               handpicked for
                            </p>
@@ -315,21 +317,49 @@
                            </button>
                         </div>
 
-                        <div class="absolute bottom-0 right-5">
-                           <img src="./assets/cute-pet-small.png" alt="" />
+                        <div class="absolute bottom-0 right-0 xl:-right-4">
+                           <img
+                              src="./assets/cute-pet-small.png"
+                              alt=""
+                              class="w-full"
+                           />
                         </div>
                      </div>
                   </div>
 
                   <!-- Product Card -->
-                  <div class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-6 w-[70%]">
-                     
+                  <div
+                     class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-3 xl:gap-6 w-full lg:w-[60%] xl:w-[70%] mt-3 lg:mt-0"
+                  >
                      <!-- product One -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-[9px] md:p-4 h-[75px] md:h-[118px]"
+                     >
+                        <div class="bg-[#f5d6bd] rounded-[10px] p-[11px] md:p-5">
+                           <img class="w-[30px] md:w-full" src="./assets/dog-cartoon.png" alt="Image" />
+                        </div>
+
+                        <div class="text-[#111] ml-4">
+                           <div class="flex items-center">
+                              <i
+                                 class="fa-solid fa-star text-[11px] md:text-[18px] text-[#FFC107]"
+                              ></i>
+                              <p class="ml-[11px] text-[11px] md:text-base">4.5</p>
+                           </div>
+
+                           <div class="font-medium mt-1 md:mt-2">
+                              <h2 class="text-[12px] md:text-xl mb-[3px] md:mb-[6px]">Pet Bed</h2>
+                              <p class=" text-[11px] md:text-base">$39.99</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- product Two -->
+                     <div
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/fish-cartoon.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -337,7 +367,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">5.0</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -347,12 +377,40 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Three -->
+                     <div class="hidden xl:block">
+                        <div
+                           class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
+                        >
+                           <div class="bg-[#f5d6bd] rounded-[10px] p-5">
+                              <img
+                                 src="./assets/bird-cartoon.png"
+                                 alt="Image"
+                              />
+                           </div>
+
+                           <div class="text-[#111] ml-4">
+                              <div class="flex items-center">
+                                 <i
+                                    class="fa-solid fa-star text-[18px] text-[#FFC107]"
+                                 ></i>
+                                 <p class="ml-[11px]">3.5</p>
+                              </div>
+
+                              <div class="font-medium mt-2">
+                                 <h2 class="text-xl mb-[6px]">Pet Bed</h2>
+                                 <p>$39.99</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- product Four -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/rabbit-cartoon.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -360,7 +418,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">4.9</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -370,12 +428,12 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Five -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/bird-cartoon.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -383,7 +441,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">4.6</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -393,12 +451,12 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Six -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/pet-couch.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -406,7 +464,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">4.7</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -416,12 +474,12 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Seven -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/fish-cartoon.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -429,7 +487,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">4.4</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -439,12 +497,12 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Eight -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/pet-couch.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -452,7 +510,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">3.5</p>
                            </div>
 
                            <div class="font-medium mt-2">
@@ -462,12 +520,12 @@
                         </div>
                      </div>
 
-                     <!-- product One -->
+                     <!-- product Nine -->
                      <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
+                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px]"
                      >
                         <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
+                           <img src="./assets/rabbit-cartoon.png" alt="Image" />
                         </div>
 
                         <div class="text-[#111] ml-4">
@@ -475,53 +533,7 @@
                               <i
                                  class="fa-solid fa-star text-[18px] text-[#FFC107]"
                               ></i>
-                              <p class="ml-[11px]">4.5</p>
-                           </div>
-
-                           <div class="font-medium mt-2">
-                              <h2 class="text-xl mb-[6px]">Pet Bed</h2>
-                              <p>$39.99</p>
-                           </div>
-                        </div>
-                     </div>
-
-                     <!-- product One -->
-                     <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
-                     >
-                        <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
-                        </div>
-
-                        <div class="text-[#111] ml-4">
-                           <div class="flex items-center">
-                              <i
-                                 class="fa-solid fa-star text-[18px] text-[#FFC107]"
-                              ></i>
-                              <p class="ml-[11px]">4.5</p>
-                           </div>
-
-                           <div class="font-medium mt-2">
-                              <h2 class="text-xl mb-[6px]">Pet Bed</h2>
-                              <p>$39.99</p>
-                           </div>
-                        </div>
-                     </div>
-
-                     <!-- product One -->
-                     <div
-                        class="bg-white border border-[#1111111a] rounded-[10px] flex items-center p-4 h-[118px] w-[275px]"
-                     >
-                        <div class="bg-[#f5d6bd] rounded-[10px] p-5">
-                           <img src="./assets/dog-cartoon.png" alt="Image" />
-                        </div>
-
-                        <div class="text-[#111] ml-4">
-                           <div class="flex items-center">
-                              <i
-                                 class="fa-solid fa-star text-[18px] text-[#FFC107]"
-                              ></i>
-                              <p class="ml-[11px]">4.5</p>
+                              <p class="ml-[11px]">4.7</p>
                            </div>
 
                            <div class="font-medium mt-2">
