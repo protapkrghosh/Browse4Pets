@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap");
 
 .font-sora {
    font-family: "Sora", serif;
@@ -10,4 +10,33 @@
 
 .hidden-gromming-card {
    display: block;
+}
+
+
+/*********** Banner Section Title Animation ***********/
+.title {
+   opacity: 0;
+   animation: revealText 2.5s forwards infinite;
+}
+
+.title-first {
+   animation-delay: 0.185s;
+}
+
+.title-second {
+   animation-delay: 0.458s;
+}
+
+.title-third {
+   animation-delay: 0.825s;
+}
+
+@keyframes revealText {
+   from {
+      transform: translateY(20px);
+   }
+   to {
+      opacity: 1;
+      transform: none;
+   }
 }
